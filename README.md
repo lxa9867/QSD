@@ -1,2 +1,1 @@
-# QSD
-Towards Robust Audiovisual Segmentation in Complex Environments with Quantization-based Semantic Decomposition
+"Towards Robust Audiovisual Segmentation in Complex Environments with Quantization-based Semantic Decomposition"

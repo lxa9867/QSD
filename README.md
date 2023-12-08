@@ -1,4 +1,4 @@
-<p align="center"><img src="figures/teaser.png" width="700"/></p>
+<p align="center"><img src="teaser.png" width="700"/></p>
 
 > [**Towards Robust Audiovisual Segmentation in Complex Environments with Quantization-based Semantic Decomposition**](https://arxiv.org/pdf/2310.00132.pdf)
 >

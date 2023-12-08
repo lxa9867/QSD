@@ -38,8 +38,8 @@ bash ./scripts/dist_train_avs_local.sh $out_path$ $weight_path$/r50_pretrained.p
 ## Citation
 
 ```
-@article{li2023rethinking,
-  title={Rethinking Audiovisual Segmentation with Semantic Quantization and Decomposition},
+@article{li2023towards,
+  title={Towards Robust Audiovisual Segmentation in Complex Environments with Quantization-based Semantic Decomposition},
   author={Li, Xiang and Wang, Jinglu and Xu, Xiaohao and Peng, Xiulian and Singh, Rita and Lu, Yan and Raj, Bhiksha},
   journal={arXiv preprint arXiv:2310.00132},
   year={2023}

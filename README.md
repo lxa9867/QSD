@@ -15,10 +15,32 @@ We propose a semantic decomposition method based on product quantization, where 
 Furthermore, we introduce a global-to-local quantization mechanism, which distills knowledge from stable global (clip-level) features into local (frame-level) ones, to handle frequent changes in audio semantics.
 Extensive experiments demonstrate that our semantically decomposed audio representation significantly improves AVS performance, \eg, +21.2\% mIoU on the challenging AVS-Semantic benchmark with ResNet50 backbone.
 
-
-
 # Updates
 - **(2023-12-07)** Repo created.
+
+# Install
+```
+conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 -c pytorch
+pip install -r requirements.txt 
+pip install 'git+https://github.com/facebookresearch/fvcore' 
+pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+cd models/ops
+python setup.py build install
+cd ../..
+```
+
+# Docker
+You may try [docker](https://hub.docker.com/r/ang9867/refer) for a quick start.
+
+# Audiovisual Semantic Segmentation (AVSS):
+```
+bash ./scripts/dist_train_avss_local.sh $out_path$ $weight_path$/r50_pretrained.pth --backbone resnet50 --as_avs True --quantitize_query True --fpn_type 'audio_dual' --global_decompose_query True -quantitize_query True --fpn_type 'audio_dual' --global_decompose_query True --dataset_file 'avss'
+```
+
+# Audiovisual Segmentation (AVS):
+```
+bash ./scripts/dist_train_avs_local.sh $out_path$ $weight_path$/r50_pretrained.pth --backbone resnet50 --as_avs True --global_decompose_query True --quantitize_query True --fpn_type 'audio_dual' --binary --dataset_file 'avs_1s7m'
+```
 
 ## Citation
 

@@ -6,7 +6,7 @@
 ---
 
 ## Updates
-- **(2023-12-07)** Repo created.
+- **(2023-12-07)** Repo created. We will release the code soon.
 
 ## Dataset
 Download the AVS and AVSS datasets from [AVSBench](http://www.avlbench.opennlplab.cn/leaderboard/avss).
